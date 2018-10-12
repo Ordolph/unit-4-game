@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Crystal Collector</title>
-    
+
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
 </head>
+
 <body>
-    <p id="startNumber">Your Number:</p>
-    <p id="score"></p>
-    <p id="wins"></p>
-    <p id="losses"></p>
-    <button id="startBtn">Start</button>
-    <button id="btn1">Button1</button>
-    <button id="btn2">Button2</button>
-    <button id="btn3">Button3</button>
-    <button id="btn4">Button4</button>
-    <button id="rstBtn">Reset</button>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Welcome to Crystal Collector!</h1>
+            <h2>How to play:</h2>
+            <h5>Push the start button in order to start the game!</h5><br>
+            <p>The objective of this game is to match your score to "Your Number" without going over.
+                This can be achieved by clicking on the gems. At the beginning of each game, each gem is assigned a
+                random
+                number 1-12, clicking the gem will add it's value to your score.
+                Have fun!
+            </p>
+
+        </div>
+        <div class="jumbotron">
+            <p id="startNumber">Your Number:</p>
+            <p id="score"></p>
+            <p id="wins"></p>
+            <p id="losses"></p>
+        </div>
+
+        <div class="row">
+            <img class="col-3" src="./assets/images/diamond.png" id="btn1">
+            <img class="col-3" src="./assets/images/gem (1).png" id="btn2">
+            <img class="col-3" src="./assets/images/gem.png" id="btn3">
+            <img class="col-3" src="./assets/images/emerald.png" id="btn4">
+        </div>
+        <div class="row">
+            <button class="col-1 btn btn-primary" id="startBtn">Start</button>
+            <button class="col-1 btn btn-danger" id="rstBtn">Reset</button>
+        </div>
+    </div>
+    <div class="footer">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+        title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 </body>
+
 </html>

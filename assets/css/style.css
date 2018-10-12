@@ -1,0 +1,13 @@
+body {
+    background-image: url(../images/bakcground.jpg)
+}
+
+img {
+    height: 200px
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
