@@ -40,6 +40,7 @@ $(document).ready(function () {
             winsLine = $("#wins").text("Wins: " + winsNum);
             scoreNum = 0
             scoreLine = $("#score").text("Score: " + scoreNum);
+            alert("You Win! Have another go!");
             start();
         }
     }
@@ -50,6 +51,7 @@ $(document).ready(function () {
             lossesLine = $("#losses").text("Losses: " + lossesNum);
             scoreNum = 0
             scoreLine = $("#score").text("Score: " + scoreNum);
+            alert("You Lose! Try again!");
             start();
         }
     }
