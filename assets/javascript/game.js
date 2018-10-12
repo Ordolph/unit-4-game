@@ -22,24 +22,24 @@ $(document).ready(function () {
     }
 
     var scoreNum = 0
-    var scoreLine = $("#score").text("Score:" + scoreNum);
+    var scoreLine = $("#score").text("Score: " + scoreNum);
     var winsNum = 0;
-    var winsLine = $("#wins").text("Wins:" + winsNum);
+    var winsLine = $("#wins").text("Wins: " + winsNum);
     var lossesNum = 0
-    var lossesLine = $("#losses").text("Losses:" + lossesNum);
+    var lossesLine = $("#losses").text("Losses: " + lossesNum);
 
     function start() {
         getStartNumber();
         getBtnNumbers();
-        $("#startNumber").text("Your Number:" + startNumber)
+        $("#startNumber").text("Your Number: " + startNumber)
     }
 
     function winCondition() {
         if (scoreNum === startNumber) {
             winsNum++;
-            winsLine = $("#wins").text("Wins:" + winsNum);
+            winsLine = $("#wins").text("Wins: " + winsNum);
             scoreNum = 0
-            scoreLine = $("#score").text("Score:" + scoreNum);
+            scoreLine = $("#score").text("Score: " + scoreNum);
             start();
         }
     }
@@ -47,20 +47,20 @@ $(document).ready(function () {
     function lossContition() {
         if (scoreNum > startNumber) {
             lossesNum++;
-            lossesLine = $("#losses").text("Losses:" + lossesNum);
+            lossesLine = $("#losses").text("Losses: " + lossesNum);
             scoreNum = 0
-            scoreLine = $("#score").text("Score:" + scoreNum);
+            scoreLine = $("#score").text("Score: " + scoreNum);
             start();
         }
     }
 
     function reset() {
         scoreNum = 0
-        scoreLine = $("#score").text("Score:" + scoreNum);
+        scoreLine = $("#score").text("Score: " + scoreNum);
         winsNum = 0;
-        winsLine = $("#wins").text("Wins:" + winsNum);
+        winsLine = $("#wins").text("Wins: " + winsNum);
         lossesNum = 0
-        lossesLine = $("#losses").text("Losses:" + lossesNum);
+        lossesLine = $("#losses").text("Losses: " + lossesNum);
         startNumber = "";
         buttonNumbs = [];
     }
@@ -70,28 +70,28 @@ $(document).ready(function () {
     $("#btn1").click(function () {
         scoreNum = scoreNum + buttonNumbs[0]
         console.log(scoreNum)
-        scoreLine = $("#score").text("Score:" + scoreNum);
+        scoreLine = $("#score").text("Score: " + scoreNum);
         winCondition()
         lossContition()
     })
     $("#btn2").click(function () {
         scoreNum = scoreNum + buttonNumbs[1]
         console.log(scoreNum)
-        scoreLine = $("#score").text("Score:" + scoreNum);
+        scoreLine = $("#score").text("Score: " + scoreNum);
         winCondition()
         lossContition()
     })
     $("#btn3").click(function () {
         scoreNum = scoreNum + buttonNumbs[2]
         console.log(scoreNum)
-        scoreLine = $("#score").text("Score:" + scoreNum);
+        scoreLine = $("#score").text("Score: " + scoreNum);
         winCondition()
         lossContition()
     })
     $("#btn4").click(function () {
         scoreNum = scoreNum + buttonNumbs[3]
         console.log(scoreNum)
-        scoreLine = $("#score").text("Score:" + scoreNum);
+        scoreLine = $("#score").text("Score: " + scoreNum);
         winCondition()
         lossContition()
     })
